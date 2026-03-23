@@ -1,0 +1,210 @@
+<div style="padding: 1rem 0;">
+
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 1.5rem;">
+  <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 1rem;">
+    <div style="font-size: 12px; color: var(--color-text-secondary);">교회 IT/AI 기술 검색</div>
+    <div style="font-size: 20px; font-weight: 500;">월 ~3,400회</div>
+    <div style="font-size: 11px; color: var(--color-text-secondary);">25개 기술 키워드 합산</div>
+  </div>
+  <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 1rem;">
+    <div style="font-size: 12px; color: var(--color-text-secondary);">가장 빠르게 성장</div>
+    <div style="font-size: 20px; font-weight: 500; color: #1D9E75;">AI 찬양 +104%</div>
+    <div style="font-size: 11px; color: #1D9E75;">0→월 1,036 (2년간 7배)</div>
+  </div>
+  <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 1rem;">
+    <div style="font-size: 12px; color: var(--color-text-secondary);">완전히 소멸한 기술</div>
+    <div style="font-size: 20px; font-weight: 500; color: #E24B4A;">메타버스 교회</div>
+    <div style="font-size: 11px; color: #E24B4A;">월 610 → 10 (98% 감소)</div>
+  </div>
+  <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 1rem;">
+    <div style="font-size: 12px; color: var(--color-text-secondary);">검색자 프로필</div>
+    <div style="font-size: 20px; font-weight: 500;">남성 70~91%</div>
+    <div style="font-size: 11px; color: var(--color-text-secondary);">30~50대 목회자/IT담당자</div>
+  </div>
+</div>
+
+<div style="font-size: 14px; font-weight: 500; margin-bottom: 8px;">전체 교회 IT·AI 기술 검색량 순위 + 성장률</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 6px; font-size: 12px; color: var(--color-text-secondary);">
+  <span style="display: flex; align-items: center; gap: 4px;"><span style="width: 10px; height: 10px; border-radius: 2px; background: #534AB7;"></span>Tier 1: 성숙 기술 (안정적 수요)</span>
+  <span style="display: flex; align-items: center; gap: 4px;"><span style="width: 10px; height: 10px; border-radius: 2px; background: #1D9E75;"></span>Tier 2: AI 기술 (급성장)</span>
+  <span style="display: flex; align-items: center; gap: 4px;"><span style="width: 10px; height: 10px; border-radius: 2px; background: #E24B4A;"></span>Tier 3: 쇠퇴/소멸 기술</span>
+</div>
+<div style="position: relative; width: 100%; height: 680px;">
+  <canvas id="fullRank"></canvas>
+</div>
+
+<div style="margin-top: 2rem; font-size: 14px; font-weight: 500; margin-bottom: 8px;">AI 기술 성장 곡선 — "빈 땅"에서 폭발 전야로</div>
+<div style="position: relative; width: 100%; height: 300px;">
+  <canvas id="aiGrowth"></canvas>
+</div>
+
+<div style="margin-top: 2rem; font-size: 14px; font-weight: 500; margin-bottom: 8px;">기술 생애주기 — 메타버스 교회 vs AI 찬양</div>
+<div style="position: relative; width: 100%; height: 260px;">
+  <canvas id="lifecycle"></canvas>
+</div>
+
+<div style="margin-top: 2rem; font-size: 14px; font-weight: 500; margin-bottom: 12px;">기술 카테고리별 성장/쇠퇴 매트릭스</div>
+<div style="position: relative; width: 100%; height: 320px;">
+  <canvas id="bubble"></canvas>
+</div>
+
+<div style="margin-top: 2rem; font-size: 14px; font-weight: 500; margin-bottom: 12px;">5가지 핵심 발견</div>
+<div style="display: flex; flex-direction: column; gap: 10px;">
+  <div style="background: var(--color-background-primary); border-left: 3px solid #534AB7; border-radius: 0; padding: 0.75rem 1rem;">
+    <div style="font-size: 13px; font-weight: 500; margin-bottom: 4px;">발견 1: 음향(530회/월)이 교회 IT의 1위 — 예배의 물리적 품질이 최우선</div>
+    <div style="font-size: 12px; color: var(--color-text-secondary); line-height: 1.6;">"교회 음향"(530) + "교회 음향 장비"(159) + "교회 무선 마이크"(200) + "교회 음향 세팅"(83) = 합산 월 970회 이상. 교회가 디지털 기술에서 가장 먼저 투자하는 것은 <strong>"소리"</strong>입니다. 검색자의 82%가 남성, 40~50대가 64%. 음향은 교회 IT의 관문이자 꾸준한 수요처입니다.</div>
+  </div>
+  <div style="background: var(--color-background-primary); border-left: 3px solid #1D9E75; border-radius: 0; padding: 0.75rem 1rem;">
+    <div style="font-size: 13px; font-weight: 500; margin-bottom: 4px;">발견 2: AI 찬양이 교회 AI의 진입점 — 0에서 월 1,036으로 7배 성장</div>
+    <div style="font-size: 12px; color: var(--color-text-secondary); line-height: 1.6;">"AI 찬양"은 2023년 11월에 처음 나타나 2년 만에 월 1,036회까지 성장했습니다(+104%). 교회가 AI를 처음 접하는 통로가 "설교"도 "행정"도 아닌 <strong>"찬양"</strong>이라는 점이 중요합니다. 한국 교회 디지털 콘텐츠의 80%가 음악이라는 점(이전 분석)과 정확히 일치합니다. AI 성경(304회, +79%)과 AI 설교(175회, +12%)도 상승 중입니다.</div>
+  </div>
+  <div style="background: var(--color-background-primary); border-left: 3px solid #E24B4A; border-radius: 0; padding: 0.75rem 1rem;">
+    <div style="font-size: 13px; font-weight: 500; margin-bottom: 4px;">발견 3: 메타버스는 완전히 사라졌다 — 교회가 "유행"에 반응했다가 이탈한 사례</div>
+    <div style="font-size: 12px; color: var(--color-text-secondary); line-height: 1.6;">"메타버스 교회"는 2022년 3월 월 610회에서 현재 월 10회로 <strong>98% 감소</strong>했습니다. 2년 만에 사실상 사라진 기술입니다. 이것은 교회가 "버즈워드"에 반응하지만 실제 활용 없이 빠르게 이탈한다는 증거입니다. 같은 맥락에서 "교회 온라인 예배"도 코로나 이후 월 13회까지 떨어졌습니다.</div>
+  </div>
+  <div style="background: var(--color-background-primary); border-left: 3px solid #D85A30; border-radius: 0; padding: 0.75rem 1rem;">
+    <div style="font-size: 13px; font-weight: 500; margin-bottom: 4px;">발견 4: PPT(-5%)와 자막 프로그램(-38%) — AI 대체 가능 영역이 이미 줄고 있다</div>
+    <div style="font-size: 12px; color: var(--color-text-secondary); line-height: 1.6;">"교회 PPT"(793→550, -5%)와 "교회 자막 프로그램"(176→130, -38%)의 하락은 의미심장합니다. 특히 자막 프로그램은 AI 실시간 자막(STT) 기술로 대체될 수 있는 영역입니다. "교회 실시간 자막 프로그램"(+1000%)이 새로 등장한 것과 맞물려, 기존 수동 자막 → AI 실시간 자막으로의 전환이 시작된 신호입니다.</div>
+  </div>
+  <div style="background: var(--color-background-primary); border-left: 3px solid #378ADD; border-radius: 0; padding: 0.75rem 1rem;">
+    <div style="font-size: 13px; font-weight: 500; margin-bottom: 4px;">발견 5: "교회 AI"(+5000%) — 2026년 1월 신규 출현, 폭발 임박</div>
+    <div style="font-size: 12px; color: var(--color-text-secondary); line-height: 1.6;">"교회 AI"라는 키워드가 2026년 1월에 처음 구글에서 월 50회로 출현했습니다. 이전에는 0이었습니다. 이것은 교회가 AI를 개별 도구(AI 찬양, AI 설교)가 아닌 <strong>"교회×AI"라는 카테고리 자체</strong>로 인식하기 시작했다는 신호입니다. "교회 미디어팀"(+200%)의 급등도 같은 맥락 — 교회가 디지털 미디어 전담 조직을 구성하기 시작했습니다.</div>
+  </div>
+</div>
+
+<div style="margin-top: 1.5rem; background: var(--color-background-secondary); border-radius: var(--border-radius-lg); padding: 1.25rem;">
+  <div style="font-size: 14px; font-weight: 500; margin-bottom: 8px;">종합 결론: 교회 IT는 "음향·영상의 시대"에서 "AI의 시대"로 전환 중이다</div>
+  <div style="font-size: 13px; color: var(--color-text-secondary); line-height: 1.7;">
+    한국 교회의 기술 인식은 세 개의 층으로 구성됩니다. <strong>1층(기반)</strong>은 음향·LED·카메라 같은 물리적 인프라로, 검색량은 월 2,000회 이상이며 꾸준합니다. <strong>2층(전환)</strong>은 PPT·자막·재정관리 같은 소프트웨어 도구로, 대부분 하락 중이며 AI 대체 압력을 받고 있습니다. <strong>3층(성장)</strong>은 AI 찬양·AI 설교·AI 성경·교회 AI로, 아직 월 2,000회 수준이지만 성장률이 100%를 넘어 1년 내 2층을 추월할 가능성이 있습니다. 온맘닷컴에게 이것은 "교회 AI 도입 가이드"와 "AI 기능 탑재 교회 홈페이지"라는 새로운 사업 기회를 의미합니다.
+  </div>
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const dark = matchMedia('(prefers-color-scheme: dark)').matches;
+const textC = dark ? '#c2c0b6' : '#3d3d3a';
+const gridC = dark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.06)';
+Chart.defaults.set('plugins.legend', { display: false });
+Chart.defaults.set('scale', { ticks: { color: textC, font: { family: '"Anthropic Sans", sans-serif', size: 10 } }, grid: { color: gridC } });
+
+const T1 = '#534AB7', T2 = '#1D9E75', T3 = '#E24B4A';
+
+new Chart(document.getElementById('fullRank'), {
+  type: 'bar',
+  data: {
+    labels: [
+      'AI 찬양 (+104%)',
+      '교회 PPT (-5%)',
+      '교회 음향 (+8%)',
+      'AI 성경 (+79%)',
+      '교회재정관리 (-31%)',
+      '교회 무선마이크 (+150%)',
+      '교회 라이브 (+21%)',
+      '교회 자막 (-38%)',
+      'AI 설교 (+12%)',
+      '교회 음향장비 (+45%)',
+      '교회 LED스크린 (+10%)',
+      '교회 카메라 (-16%)',
+      '교회 방송 (+23%)',
+      '교회 유튜브 (+69%)',
+      '교회 음향세팅 (0%)',
+      '교회 LED (-18%)',
+      '교회 방송장비 (+20%)',
+      'PTZ 카메라 (+18%)',
+      '교회 미디어팀 (+200%)',
+      '교회 영상시스템 (-40%)',
+      '교회 앱 (+25%)',
+      '교회 방송시스템 (0%)',
+      '교회 AI (+5000%)',
+      '영상 카메라 (-76%)',
+      '교회 프로젝터 (0%)',
+      '교회 온라인예배 (0%)',
+      '메타버스 교회 (0%)'
+    ],
+    datasets: [{
+      data: [854,793,530,304,209,200,183,176,175,159,143,123,113,99,83,82,66,63,56,55,50,50,33,28,13,13,10],
+      backgroundColor: [
+        T2,T1,T1,T2,T1,T1,T1,T3,T2,T1,T1,T3,T1,T1,T1,T3,T1,T1,T2,T3,T2,T1,T2,T3,T3,T3,T3
+      ],
+      borderRadius: 4, barPercentage: 0.6
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false, indexAxis: 'y',
+    scales: { x: { ticks: { callback: v => v+'회/월' } }, y: { ticks: { font: { size: 9 } } } },
+    plugins: { tooltip: { callbacks: { label: ctx => '월 '+ctx.raw.toLocaleString()+'회' } } }
+  }
+});
+
+const aiMonths = ['23.11','24.1','24.3','24.5','24.7','24.9','24.11','25.1','25.3','25.5','25.7','25.9','25.11','26.1','26.2'];
+new Chart(document.getElementById('aiGrowth'), {
+  type: 'line',
+  data: {
+    labels: aiMonths,
+    datasets: [
+      { label: 'AI 찬양', data: [140,210,140,140,110,70,90,110,110,170,210,320,480,880,1036], borderColor: '#1D9E75', fill: false, tension: 0.3, borderWidth: 2.5, pointRadius: 3 },
+      { label: 'AI 성경', data: [80,140,110,140,70,70,50,107,153,108,360,286,189,276,339], borderColor: '#534AB7', fill: false, tension: 0.3, borderWidth: 2, pointRadius: 2 },
+      { label: 'AI 설교', data: [90,140,119,140,120,69,110,65,120,89,99,199,150,240,169], borderColor: '#D85A30', fill: false, tension: 0.3, borderWidth: 2, pointRadius: 2 },
+      { label: '교회 AI', data: [0,0,0,0,0,0,0,0,0,0,0,0,0,50,50], borderColor: '#378ADD', fill: false, tension: 0, borderWidth: 2, pointRadius: 2, borderDash:[5,3] },
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    scales: { y: { beginAtZero: true, ticks: { callback: v => v.toLocaleString() } } },
+    plugins: { legend: { display: true, position: 'top', labels: { boxWidth: 12, font: { size: 11 }, color: textC } } }
+  }
+});
+
+const lcMonths = ['22.3','22.6','22.9','22.12','23.3','23.6','23.9','23.12','24.3','24.6','24.9','24.12','25.3','25.6','25.9','25.12','26.1','26.2'];
+new Chart(document.getElementById('lifecycle'), {
+  type: 'line',
+  data: {
+    labels: lcMonths,
+    datasets: [
+      { label: '메타버스 교회 (소멸)', data: [610,430,210,150,130,90,90,59,59,30,53,20,20,30,10,10,10,10], borderColor: '#E24B4A', fill: false, tension: 0.3, borderWidth: 2, pointRadius: 2 },
+      { label: 'AI 찬양 (폭발)', data: [0,0,0,0,0,0,0,140,140,140,70,110,110,180,333,616,911,1036], borderColor: '#1D9E75', fill: false, tension: 0.3, borderWidth: 2.5, pointRadius: 3 },
+      { label: '교회 음향 (안정)', data: [730,650,590,710,730,770,760,800,980,760,690,780,610,580,550,480,610,500], borderColor: '#534AB7', fill: false, tension: 0.3, borderWidth: 1.5, pointRadius: 1.5, borderDash:[4,4] },
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    scales: { y: { beginAtZero: true } },
+    plugins: { legend: { display: true, position: 'top', labels: { boxWidth: 12, font: { size: 11 }, color: textC } } }
+  }
+});
+
+new Chart(document.getElementById('bubble'), {
+  type: 'bubble',
+  data: {
+    datasets: [
+      { label: '교회 음향', data: [{x:8,y:530,r:12}], backgroundColor: T1+'88' },
+      { label: '교회 PPT', data: [{x:-5,y:793,r:14}], backgroundColor: T1+'88' },
+      { label: '교회 LED스크린', data: [{x:10,y:143,r:7}], backgroundColor: T1+'88' },
+      { label: '교회 유튜브', data: [{x:69,y:99,r:7}], backgroundColor: T1+'88' },
+      { label: 'AI 찬양', data: [{x:104,y:854,r:14}], backgroundColor: T2+'bb' },
+      { label: 'AI 성경', data: [{x:79,y:304,r:9}], backgroundColor: T2+'bb' },
+      { label: 'AI 설교', data: [{x:12,y:175,r:8}], backgroundColor: T2+'bb' },
+      { label: '교회 미디어팀', data: [{x:200,y:56,r:6}], backgroundColor: T2+'bb' },
+      { label: '교회 자막', data: [{x:-38,y:176,r:8}], backgroundColor: T3+'88' },
+      { label: '영상시스템', data: [{x:-40,y:55,r:5}], backgroundColor: T3+'88' },
+      { label: '메타버스', data: [{x:-98,y:10,r:4}], backgroundColor: T3+'bb' },
+      { label: '영상카메라', data: [{x:-76,y:28,r:4}], backgroundColor: T3+'88' },
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    scales: {
+      x: { title: { display: true, text: '성장률 (%)', color: textC, font: { size: 11 } }, min: -120, max: 220,
+        grid: { color: ctx => ctx.tick.value === 0 ? (dark ? 'rgba(255,255,255,0.2)' : 'rgba(0,0,0,0.15)') : gridC }
+      },
+      y: { title: { display: true, text: '월 검색량', color: textC, font: { size: 11 } }, beginAtZero: true, max: 1000 }
+    },
+    plugins: {
+      legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': 월 ' + ctx.raw.y + '회, 성장률 ' + ctx.raw.x + '%' } }
+    },
+    layout: { padding: 20 }
+  }
+});
+</script>
